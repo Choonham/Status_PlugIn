@@ -1,0 +1,9 @@
+name: ASTRA_SERVER_STATUS
+version: 0.0.1
+api-version: 1.15
+main: com.choonham.status.Main
+commands:
+  Status:
+  SPS:
+  Points:
+
