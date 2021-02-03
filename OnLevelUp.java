@@ -222,7 +222,7 @@ public class OnLevelUp implements Listener, CommandExecutor {
     }
 
     @EventHandler
-    public void OnPlayerClickInventory(InventoryClickEvent E) {
+    public void OnPlayerClickInventory(InventoryClickEvent E) {  //능력치 선택 GUI
         try {
             Inventory Clicked = E.getClickedInventory();
             if (Clicked != null) {
@@ -334,7 +334,7 @@ public class OnLevelUp implements Listener, CommandExecutor {
         }
     }
     public ItemStack SetItem(ArrayList<ItemStack> items, int i,
-                             Material material, String Price, String description) {
+                             Material material, String Price, String description) {    //인벤토리 vault에 들어갈 아이템 메타를 수정하는 함수
         List<String> DES = Arrays.asList(description);
         items.add(i, new ItemStack(material, 1));
         ItemMeta meta = items.get(i).getItemMeta();
