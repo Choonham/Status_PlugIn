@@ -24,6 +24,7 @@ public class OnJoin implements Listener {
             Main.status.set(name+".devotion",initStatus);
             Main.status.set(name+".agility",initStatus);
             Main.status.set(name+".spellPower",initStatus);
+	// 어떤 이유로 내게 와 함께 있어준 당신~
         }
         player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(20 + ((double) Main.status.get(name + ".max_Health")));
         player.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE).setBaseValue(1 + (0.5*(double) Main.status.get(name + ".power")));
